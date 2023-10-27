@@ -1,0 +1,67 @@
+/* Documento para padronizar as páginas*/
+
+/* Reset de página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Criando variáveis para utilizar em todos os documentos */
+
+/* 
+    Como fazer varível
+    --nome-nome: dado;
+
+    Como utilizar variável
+    var(--nome-nome);
+
+*/
+
+:root{
+
+    /* Cores */
+    --vermelho: #FF3333;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --marrom: #664747;
+    --marrom-claro: #A99393;
+    --cinza: #535353;
+
+    /* Fonte */
+    --fonte-principal: 'Sahitya', serif;
+    --fonte-secundaria: 'Acme', sans-serif;
+    --fonte-botao: 'Spectral', serif;
+
+}
+
+/* Tirando estilização padrão dos botões, links(a) e input */
+
+button{
+
+    /* Deixando o cursor click */
+    cursor: pointer;
+
+    /* Removendo o fundo e a borda */
+    background-color: inherit;
+    border: none;
+
+    font-family: var(--fonte-botao);
+}
+
+a{
+
+    /* Tirando a decoração e cor padrão */
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Input serve para receber dados */
+
+input:focus {
+
+    /* Removendo borda ao clicar */
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

@@ -1,0 +1,69 @@
+/* Estilizando o HEADER */
+
+/*
+    Padding: Todos;
+    Padding: Cima/Baixo, Direita/Esquerda
+    Padding: Cima, Direita, Baixo, Esquerda;
+*/
+
+/* 
+    Jeito mais fácil de centralizar tudo
+    Colocar configurações na div 'pai'
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    background-color: var(--vermelho);
+}
+
+header img{
+
+    /* WIDTH = LARGURA - HEIGHT = ALTURA */
+    height: 90px;
+
+}
+
+header .textos{
+    display: flex;
+
+    /* 
+        Defini o tamanho pra 30% da largura da página inteira
+        VW = largura da página 
+        VH = altura da página
+    */
+
+    width: 30vw;
+    justify-content: space-between;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+    
+}
+
+header button{
+    display: flex;
+    width: 225px;
+    height: 55px;
+    background-color: var(--branco);
+    color: var(--vermelho);
+    font-size: 1.5rem;
+
+    /* Deixando a fonte em MAIÚSCULO */
+    text-transform: uppercase;
+    
+}
+
+header button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

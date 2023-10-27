@@ -1,0 +1,48 @@
+body{
+
+    /* Definindo o display para grid */
+    display: grid;
+    /* Definindo o tamanho dos filhos dele para auto e o que sobrar */
+    grid-template-rows: auto 1fr;
+    /* Definindo o tamanho mínimo da página para a tela inteira */
+    min-height: 100vh;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+    gap: 30px;
+}
+
+main > img{
+    width: 90%;
+}
+
+main .container-opcoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+.adocao, .localizao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+}
+
+.adocao img, .localizao img{
+    height: 150px;
+}
+
+.adocao p, .localizao p{
+    font-size: 1rem;
+    color: var(--vermelho);
+    width: 40%;
+    text-align: center;
+    font-weight: 700;
+}
